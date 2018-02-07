@@ -1,0 +1,138 @@
+.stub {
+  background: url("/img/stub/stub__bg1-1920.png") no-repeat 0 0, url("/img/stub/stub__bg2-1920.png") no-repeat 100% 100%;
+  // background: url("/img/stub/stub__bg-1920.jpg");
+  padding: 79px 15px 120px 15px;
+  font-family: arial, serif;
+  line-height: 1;
+  color: #333;
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media #{$s}{
+    background: url("/img/stub/stub__bg-mob-land.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  @media #{$s} and #{$p}  {
+    background: url("/img/stub/stub__bg-mob.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+}
+
+.stub__top {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 131px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.stub__logo,
+.offscreen-text {
+  font-family: 'Rubik', sans-serif;
+  font-size:0;
+  text-transform: uppercase;
+  // text-align: center;
+
+  margin: 0 auto 22px;
+}
+
+
+
+.stub__descr {
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4em;
+  margin: 0 0 142px;
+  margin-right: -0.4em;
+}
+
+.stub__contact {
+  // text-align: center;
+  font-size: 30px;
+  margin: 0 0 30px;
+}
+
+.stub__phone {
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  color: #394d81;
+  font-size: 48px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.offscreen-text {
+  width: 100%;
+  transform: translateY(-50%);
+  display: block;
+  position: absolute;
+  top: -9999px;
+  span {
+  //   display: inline-block;
+  //   font-size:110px;
+    margin-right: 7.3vw;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.text {
+  // margin: 0;
+  // text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  span {
+    position: absolute;
+    left: 0;
+  }
+}
+
+
+@media #{$s}{
+  .stub {
+    padding: 30px 15px;
+  }
+  // .stub__logo{
+  //   span {
+  //     font-size: 60px;
+  //   }
+  // }
+  .stub__top {
+    font-size: 20px;
+    margin: 0 0 40px;
+    line-height: 1.2;
+  }
+
+  .stub__descr {
+    font-size: 20px;
+    margin: 0 0 40px;
+  }
+
+  .stub__phone {
+    font-size: 30px;
+  }
+
+  .stub__contact {
+    font-size: 20px;
+    margin: 0px 0 10px;
+  }
+}
+
+
